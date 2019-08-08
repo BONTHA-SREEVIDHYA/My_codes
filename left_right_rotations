@@ -1,0 +1,13 @@
+l=input().split(":")
+st=l[0]
+n=len(l[1])
+m=len(st)
+num=l[1]
+sum=0
+for i in range(n):
+    sum=sum+(int(num[i])*int(num[i]))
+if(sum%2==0):
+    print(st[m-1]+st[0:m-1])
+else:
+    print(st[2:m]+st[0:2])
+    
